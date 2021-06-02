@@ -1,0 +1,637 @@
+
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+	--rojo: #e50922;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/fondo.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+}
+
+.pelicula-secundaria {
+	font-size: 20px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/bravehearth.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-secundaria .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-secundaria .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-secundaria .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-secundaria .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-secundaria .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-secundaria .boton i {
+	margin-right: 1.25em;
+}
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-secundaria {
+		font-size: 14px;
+	}
+
+	.pelicula-secundaria .descripcion {
+		max-width: 100%;
+	}
+
+	}
+
+	.peliculagt {
+		font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/gran-torino.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+	}
+	
+	.peliculagt .contenedor {
+		margin: 0 auto;
+		margin-bottom: 6.25em;
+	}
+	
+	.peliculagt .titulo {
+		font-weight: 600;
+		font-size: 3.12em;
+		margin-bottom: 0.4em;
+	}
+	
+	.peliculagt .descripcion {
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.75em;
+		max-width: 50%;
+		margin-bottom: 1.25em;
+	}
+	
+	.peliculagt .boton {
+		background: rgba(0,0,0, 0.5);
+		border: none;
+		border-radius: 0.31em;
+		padding: 0.93em 1.87em;
+		color: #fff;
+		margin-right: 1.25em;
+		cursor: pointer;
+		transition: .3s ease all;
+		font-size: 1.12em;
+	}
+	
+	.peliculagt .boton:hover {
+		background: #fff;
+		color: #000;
+	}
+	
+	.peliculagt .boton i {
+		margin-right: 1.25em;
+	}
+	
+	@media screen and (max-width: 800px) {
+		header .logotipo {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	
+		header .contenedor {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		.peliculagt {
+			font-size: 14px;
+		}
+	
+		.peliculagt .descripcion {
+			max-width: 100%;
+		}
+	}
+
+	
+	.peliculassr {
+		font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/ryan.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+	}
+	
+	.peliculassr .contenedor {
+		margin: 0 auto;
+		margin-bottom: 6.25em;
+	}
+	
+	.peliculassr .titulo {
+		font-weight: 600;
+		font-size: 3.12em;
+		margin-bottom: 0.4em;
+	}
+	
+	.peliculassr .descripcion {
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.75em;
+		max-width: 50%;
+		margin-bottom: 1.25em;
+	}
+	
+	.peliculassr .boton {
+		background: rgba(0,0,0, 0.5);
+		border: none;
+		border-radius: 0.31em;
+		padding: 0.93em 1.87em;
+		color: #fff;
+		margin-right: 1.25em;
+		cursor: pointer;
+		transition: .3s ease all;
+		font-size: 1.12em;
+	}
+	
+	.peliculassr .boton:hover {
+		background: #fff;
+		color: #000;
+	}
+	
+	.peliculassr .boton i {
+		margin-right: 1.25em;
+	}
+	
+	@media screen and (max-width: 800px) {
+		header .logotipo {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	
+		header .contenedor {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		.peliculassr {
+			font-size: 14px;
+		}
+	
+		.peliculassr .descripcion {
+			max-width: 100%;
+		}
+	}
+
+	
+	.peliculavida {
+		font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/vida-bella.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+	}
+	
+	.peliculavida .contenedor {
+		margin: 0 auto;
+		margin-bottom: 6.25em;
+	}
+	
+	.peliculavida .titulo {
+		font-weight: 600;
+		font-size: 3.12em;
+		margin-bottom: 0.4em;
+	}
+	
+	.peliculavida .descripcion {
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.75em;
+		max-width: 50%;
+		margin-bottom: 1.25em;
+	}
+	
+	.peliculavida .boton {
+		background: rgba(0,0,0, 0.5);
+		border: none;
+		border-radius: 0.31em;
+		padding: 0.93em 1.87em;
+		color: #fff;
+		margin-right: 1.25em;
+		cursor: pointer;
+		transition: .3s ease all;
+		font-size: 1.12em;
+	}
+	
+	.peliculavida .boton:hover {
+		background: #fff;
+		color: #000;
+	}
+	
+	.peliculavida .boton i {
+		margin-right: 1.25em;
+	}
+	
+	@media screen and (max-width: 800px) {
+		header .logotipo {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	
+		header .contenedor {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		.peliculavida {
+			font-size: 14px;
+		}
+	
+		.peliculavida .descripcion {
+			max-width: 100%;
+		}
+	}
+
+
+	.peliculapadrino {
+		font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/padrino.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+	}
+	
+	.peliculapadrino .contenedor {
+		margin: 0 auto;
+		margin-bottom: 6.25em;
+	}
+	
+	.peliculapadrino .titulo {
+		font-weight: 600;
+		font-size: 3.12em;
+		margin-bottom: 0.4em;
+	}
+	
+	.peliculapadrino .descripcion {
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.75em;
+		max-width: 50%;
+		margin-bottom: 1.25em;
+	}
+	
+	.peliculapadrino .boton {
+		background: rgba(0,0,0, 0.5);
+		border: none;
+		border-radius: 0.31em;
+		padding: 0.93em 1.87em;
+		color: #fff;
+		margin-right: 1.25em;
+		cursor: pointer;
+		transition: .3s ease all;
+		font-size: 1.12em;
+	}
+	
+	.peliculapadrino .boton:hover {
+		background: #fff;
+		color: #000;
+	}
+	
+	.peliculapadrino .boton i {
+		margin-right: 1.25em;
+	}
+	
+	@media screen and (max-width: 800px) {
+		header .logotipo {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	
+		header .contenedor {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		.peliculapadrino {
+			font-size: 14px;
+		}
+	
+		.peliculapadrino .descripcion {
+			max-width: 100%;
+		}
+	}
+
+
+
+
+
+	.peliculahp {
+		font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/hora.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+	}
+	
+	.peliculahp .contenedor {
+		margin: 0 auto;
+		margin-bottom: 6.25em;
+	}
+	
+	.peliculahp .titulo {
+		font-weight: 600;
+		font-size: 3.12em;
+		margin-bottom: 0.4em;
+	}
+	
+	.peliculahp .descripcion {
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.75em;
+		max-width: 50%;
+		margin-bottom: 1.25em;
+	}
+	
+	.peliculahp .boton {
+		background: rgba(0,0,0, 0.5);
+		border: none;
+		border-radius: 0.31em;
+		padding: 0.93em 1.87em;
+		color: #fff;
+		margin-right: 1.25em;
+		cursor: pointer;
+		transition: .3s ease all;
+		font-size: 1.12em;
+	}
+	
+	.peliculahp .boton:hover {
+		background: #fff;
+		color: #000;
+	}
+	
+	.peliculahp .boton i {
+		margin-right: 1.25em;
+	}
+	
+	@media screen and (max-width: 800px) {
+		header .logotipo {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	
+		header .contenedor {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		.peliculahp {
+			font-size: 14px;
+		}
+	
+		.peliculahp .descripcion {
+			max-width: 100%;
+		}
+	}
+
+	.peliculanm {
+		font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/noche.jpg);
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+	}
+	
+	.peliculanm .contenedor {
+		margin: 0 auto;
+		margin-bottom: 6.25em;
+	}
+	
+	.peliculanm .titulo {
+		font-weight: 600;
+		font-size: 3.12em;
+		margin-bottom: 0.4em;
+	}
+	
+	.peliculanm .descripcion {
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.75em;
+		max-width: 50%;
+		margin-bottom: 1.25em;
+	}
+	
+	.peliculanm .boton {
+		background: rgba(0,0,0, 0.5);
+		border: none;
+		border-radius: 0.31em;
+		padding: 0.93em 1.87em;
+		color: #fff;
+		margin-right: 1.25em;
+		cursor: pointer;
+		transition: .3s ease all;
+		font-size: 1.12em;
+	}
+	
+	.peliculanm .boton:hover {
+		background: #fff;
+		color: #000;
+	}
+	
+	.peliculanm .boton i {
+		margin-right: 1.25em;
+	}
+	
+	@media screen and (max-width: 800px) {
+		header .logotipo {
+			margin-bottom: 10px;
+			font-size: 30px;
+		}
+	
+		header .contenedor {
+			flex-direction: column;
+			text-align: center;
+		}
+	
+		.peliculanm {
+			font-size: 14px;
+		}
+	
+		.peliculanm .descripcion {
+			max-width: 100%;
+		}
+	}
+	
+	
+	
